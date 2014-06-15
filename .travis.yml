@@ -1,3 +1,11 @@
 language: c
 compiler: gcc
 script: make dwm
+deploy:
+  provider: s3
+  access_key_id: AKIAJFH33MDBV37RNJVQ
+  secret_access_key:
+    secure: oIeW50QrBhlxI8x6ZViXax7GMTqDACh78Y+1ycMeFm+UyWZK2IJsxTO314uIMBOeICvDtCh672GN81AhmaO4Qu7dLqOkvRy5JyeAom8IQ7let9YBwe4tW8m8KO/hbYNA30Ds6FqiX0bi2w8C+GDGMbeRBB+YLd/uI+NnxJi8eyk=
+  bucket: mavant-dwm
+  on:
+    repo: mavant/my-dwm
