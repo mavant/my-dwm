@@ -10,4 +10,4 @@ deploy:
   skip_cleanup: true
   local-dir: bin
   on:
-    tag: true
+    tags: true
