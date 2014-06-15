@@ -1,6 +1,6 @@
 language: c
 compiler: gcc
-script: make dwm
+script: make s3
 deploy:
   provider: s3
   access_key_id: AKIAJFH33MDBV37RNJVQ
