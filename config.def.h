@@ -115,9 +115,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
-static const Bool showsystray = True;
-static const int systrayspacing = 4;
-static const int systraypinning = 2;
-static const Bool systraypinningfailfirst = False;
-
