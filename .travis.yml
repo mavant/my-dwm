@@ -10,3 +10,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: mavant/my-dwm
+    tag: s3
