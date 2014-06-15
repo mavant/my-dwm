@@ -24,11 +24,11 @@ config.h:
 	@echo creating $@ from config.def.h
 	@cp config.def.h $@
 
-s3: ${OBJ}
+s3: 
 	@echo GCC -o $@
 	@${GCC} -o $@ ${OBJ} ${LDFLAGS}
 	@mkdir bin
-	@mv dwm bin/
+	@mv dwm bin
 
 dwm: ${OBJ}
 	@echo GCC -o $@
