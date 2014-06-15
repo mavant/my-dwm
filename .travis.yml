@@ -11,4 +11,8 @@ deploy:
   local-dir: build
   on:
     repo: mavant/my-dwm
+<<<<<<< HEAD
     tag: true
+=======
+    tag: s3
+>>>>>>> de6ebe1ee5901e27e9f7211cab5b50f666590f06
