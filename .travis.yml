@@ -10,5 +10,4 @@ deploy:
   skip_cleanup: true
   local-dir: bin
   on:
-    tags: true
     repo: mavant/my-dwm
