@@ -12,11 +12,11 @@ options:
 	@echo dwm build options:
 	@echo "CFLAGS   = ${CFLAGS}"
 	@echo "LDFLAGS  = ${LDFLAGS}"
-	@echo "CC       = ${CC}"
+	@echo "GCC       = ${GCC}"
 
 .c.o:
-	@echo CC $<
-	@${CC} -c ${CFLAGS} $<
+	@echo GCC $<
+	@${GCC} -c ${CFLAGS} $<
 
 ${OBJ}: config.h config.mk
 
@@ -25,8 +25,8 @@ config.h:
 	@cp config.def.h $@
 
 dwm: ${OBJ}
-	@echo CC -o $@
-	@${CC} -o $@ ${OBJ} ${LDFLAGS}
+	@echo GCC -o $@
+	@${GCC} -o $@ ${OBJ} ${LDFLAGS}
 
 clean:
 	@echo cleaning
