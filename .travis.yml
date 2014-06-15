@@ -11,3 +11,4 @@ deploy:
   local-dir: bin
   on:
     tags: true
+    repo: mavant/my-dwm
