@@ -28,11 +28,11 @@ dwm: ${OBJ}
 	@echo GCC -o $@
 	@${GCC} -o $@ ${OBJ} ${LDFLAGS}
 	@mkdir bin
-	@mv dwm bin
+	@cp dwm bin
 
 clean:
 	@echo cleaning
-	@rm -f dwm ${OBJ} dwm-${VERSION}.tar.gz
+	@rm -rf bin dwm ${OBJ} dwm-${VERSION}.tar.gz
 
 dist: clean
 	@echo creating dist tarball

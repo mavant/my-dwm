@@ -59,6 +59,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb
 static const char *termcmd[]  = { "st", NULL };
 static const char *browser[]  = { "luakit", NULL };
 static const char *texts[]  = { "surf mightytext.net/web", NULL };
+static const char *vifm[]  = { "surf mightytext.net/web", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -66,6 +67,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,	                XK_y,	   spawn,          {.v = texts } },
 	{ MODKEY,		        XK_u,      spawn,          {.v = browser } },
+	{ MODKEY,		        XK_v,      spawn,          {.v = vifm } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
