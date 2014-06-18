@@ -32,7 +32,7 @@ dwm: ${OBJ}
 
 clean:
 	@echo cleaning
-	@rm -rf bin dwm ${OBJ} dwm-${VERSION}.tar.gz
+	@rm -rf bin dwm ${OBJ} dwm-${VERSION}.tar.gz config.h
 
 dist: clean
 	@echo creating dist tarball

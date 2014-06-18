@@ -59,7 +59,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb
 static const char *termcmd[]  = { "st", NULL };
 static const char *browser[]  = { "luakit", NULL };
 static const char *texts[]  = { "surf mightytext.net/web", NULL };
-static const char *vifm[]  = { "surf mightytext.net/web", NULL };
+static const char *vifm[]  = { "st -e vifm", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
